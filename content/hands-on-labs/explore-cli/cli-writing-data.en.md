@@ -39,7 +39,7 @@ The DynamoDB [UpdateItem API](https://docs.aws.amazon.com/amazondynamodb/latest/
 
 The `update-item` API call also allows you to specify a ConditionExpression, meaning the Update request will only execute if the ConditionExpression is satisfied.  For more information please see [Condition Expressions](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Expressions.ConditionExpressions.html) in the Developer Guide.
 
-Let's say we want to update the Forum item for DynamoDB to note that there are 5 messages how instead of 4, we only want that change to execute if no other processing thread has updated the item first. This allows us to create idempotent modifications. For more information on idempotent changes please see [Working With Items](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate) in the Developer Guide.
+Let's say we want to update the Forum item for DynamoDB to note that there are 5 messages now instead of 4, we only want that change to execute if no other processing thread has updated the item first. This allows us to create idempotent modifications. For more information on idempotent changes please see [Working With Items](https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/WorkingWithItems.html#WorkingWithItems.ConditionalUpdate) in the Developer Guide.
 
 To do this from the CLI, we would run:
 
