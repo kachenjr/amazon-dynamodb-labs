@@ -14,7 +14,7 @@ Next, choose the ProductCatalog table and scroll down to see the Items preview p
 
 We can see visually that the table has a Partition Key of *Id* (which is the `Number` type), no sort key, and there are 8 items in the table.  Some items are Books and some items are Bicycles and some attributes like *Id*, *Price*, *ProductCategory*, and *Title* exist in every Item while other Category specific attributes like Authors or Colors exist only on some items.
 
-Click on the *Id* attribute `101` to pull up the Item editor for that Item.  We can see and modify all the attributes for this item right from the console.  Try changing the *Title* to "Book 101 Title New and Improved".  Click **Add new attribute** named *Reviewers* of the String set type and then clicking **Insert a field** twice to add a couple of entries to that set.  When you're done click **Save changes**
+Click on the *Id* attribute `101` to pull up the Item editor for that Item.  We can see and modify all the attributes for this item right from the console.  Try changing the *Title* to "Book 101 Title New and Improved".  Click **Add new attribute** and add a new attribute named *Reviewers* of the type *String Set*.  Click **Insert a field** to add multiple entries to that set.  When you're done click **Save changes**
 
 ![Console ProductCatalog Items Editor Forms](/images/hands-on-labs/explore-console/console_item_editor_forms.png)
 
